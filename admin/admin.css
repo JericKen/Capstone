@@ -1,0 +1,94 @@
+:root {
+    --primary-color:  rgb(252, 177, 2);
+    --secondary-color: rgb(98, 49, 158);
+}
+
+.center-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans";
+}
+
+a {
+    text-decoration: none;
+
+}
+
+p {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+button {
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid black;
+    font-weight: 600;
+    width: 30%;
+}
+
+body {
+    /* background-color: var(--primary-color); */
+    height: 100vh;
+    gap: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 80%;
+}
+
+th,
+td {
+    padding: 6px;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.payment-calculator {
+    width: 100%;
+    position: absolute;
+    inset: 0;
+    display: none;
+    backdrop-filter: blur(10px);
+}
+
+.payment-calculator form {
+    width: 300px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 8px 16px 0px;
+}
+
+form input {
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
